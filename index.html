@@ -1,352 +1,648 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YL60XQ455W');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Conciergerie Airbnb Courbevoie | Hostopia — Gestion locative Courbevoie</title>
+  <title>Conciergerie Airbnb Courbevoie | Hostopia — Gestion locative Hauts-de-Seine</title>
   <meta name="description" content="Conciergerie Airbnb à Courbevoie (92) — Hostopia gère votre bien à La Défense. Voyageurs d'affaires, gestion 100% déléguée, revenus optimisés.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://conciergeriecourbevoie.fr/">
-
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conciergeriecourbevoie.fr/">
   <meta property="og:title" content="Conciergerie Airbnb Courbevoie | Hostopia">
   <meta property="og:description" content="Conciergerie Airbnb à Courbevoie (92) — Hostopia gère votre bien à La Défense. Voyageurs d'affaires, gestion 100% déléguée, revenus optimisés.">
-  <meta property="og:image" content="https://conciergeriecourbevoie.fr/assets/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Conciergerie Airbnb Courbevoie | Hostopia">
-  <meta name="twitter:description" content="Conciergerie Airbnb à Courbevoie (92) — Hostopia gère votre bien à La Défense. Voyageurs d'affaires, gestion 100% déléguée, revenus optimisés.">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Hostopia Conciergerie Courbevoie",
-    "description": "Conciergerie Airbnb à Courbevoie (92), Hauts-de-Seine. Gestion locative courte durée au cœur de La Défense.",
-    "url": "https://conciergeriecourbevoie.fr",
-    "telephone": "+33767209266",
-    "email": "contact@hostopia.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Courbevoie",
-      "addressLocality": "Courbevoie",
-      "postalCode": "92400",
-      "addressRegion": "Hauts-de-Seine",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 48.8974,
-      "longitude": 2.2564
-    },
-    "areaServed": ["Courbevoie", "La Défense", "Neuilly-sur-Seine", "Levallois-Perret", "Nanterre"],
-    "priceRange": "€€",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "08:00",
-      "closes": "20:00"
-    },
-    "sameAs": ["https://hostopia.fr"]
-  }
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Hostopia Conciergerie Courbevoie","description":"Conciergerie Airbnb à Courbevoie (92), Hauts-de-Seine. Gestion locative courte durée au cœur de La Défense.","url":"https://conciergeriecourbevoie.fr","telephone":"+33767209266","email":"contact@hostopia.fr","address":{"@type":"PostalAddress","streetAddress":"Courbevoie","addressLocality":"Courbevoie","postalCode":"92400","addressRegion":"Hauts-de-Seine","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.8974,"longitude":2.2564},"areaServed":["Courbevoie","La Défense","Neuilly-sur-Seine","Levallois-Perret"],"priceRange":"€€","sameAs":["https://hostopia.fr"]}
   </script>
-
   <style>
-    .hero {
-      min-height: 100vh;
-      background: var(--noir);
-      display: flex;
-      align-items: center;
-      padding-top: 80px;
-      position: relative;
-      overflow: hidden;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --blue:#0047BA;
+      --blue-deep:#002F80;
+      --blue-night:#001229;
+      --blue-light:#00AEEF;
+      --yellow:#FFD400;
+      --yellow-hover:#E6BF00;
+      --green:#49B675;
+      --bg:#F5F7FA;
+      --white:#FFFFFF;
+      --text:#1A1A1A;
+      --muted:#4B5563;
+      --light:#9CA3AF;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.06);
+      --shadow-md:0 4px 16px rgba(0,71,186,.08),0 2px 8px rgba(0,0,0,.04);
+      --shadow-lg:0 16px 48px rgba(0,71,186,.12),0 4px 16px rgba(0,0,0,.06);
+      --r:12px;--r-lg:20px;
+      --ease:0.3s cubic-bezier(.4,0,.2,1);
     }
-    .hero .orb-1 { width:600px;height:600px;top:-100px;right:-100px; }
-    .hero .orb-2 { width:400px;height:400px;bottom:-50px;left:-80px; }
-    .hero .orb-3 { width:300px;height:300px;top:40%;left:40%; }
-    .hero-content { position:relative;z-index:1;max-width:780px; }
-    .hero-badge { margin-bottom:28px; }
-    .hero h1 { color:var(--blanc);margin-bottom:24px; }
-    .hero h1 span { background:linear-gradient(135deg,var(--teal-light),var(--orange-warm));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; }
-    .hero-sub { font-size:clamp(17px,2vw,20px);color:rgba(255,255,255,0.65);max-width:52ch;margin-bottom:0;font-weight:400; }
-    .hero-bottom { margin-top:72px;display:flex;gap:48px;flex-wrap:wrap; }
-    .hero-stat { display:flex;flex-direction:column;gap:4px; }
-    .hero-stat small { font-size:13px;color:rgba(255,255,255,0.45);font-weight:500;text-transform:uppercase;letter-spacing:0.06em; }
-    .hero-stat .stat-number { font-size:2.5rem; }
-    .zone-inner-grid { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
-    .cta-section { background:var(--cream);padding:80px 0;text-align:center; }
-    .cta-card { display:inline-flex;flex-direction:column;align-items:center;gap:24px;padding:56px 64px;max-width:640px;width:100%;background:var(--blanc);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);position:relative;overflow:hidden; }
-    .cta-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--orange)); }
-    .cta-card h2 { font-size:clamp(1.5rem,3vw,2rem); }
-    .cta-card p { color:var(--grey-600);font-size:17px;text-align:center; }
-    .btn-cta-main { padding:18px 40px;font-size:17px;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--teal) 0%,var(--orange) 100%);color:var(--blanc);font-weight:700;box-shadow:0 6px 28px rgba(107,168,160,0.4);transition:var(--transition);display:inline-flex;align-items:center;gap:10px; }
-    .btn-cta-main:hover { transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(107,168,160,0.5); }
-    .cta-note { font-size:13px;color:var(--grey-400); }
-    .benefits-section { background:var(--blanc); }
-    .benefits-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:28px; }
-    .benefit-card { padding:40px 36px; }
-    .benefit-card .icon-wrap { margin-bottom:24px; }
-    .benefit-card h3 { font-size:1.3rem;margin-bottom:12px; }
-    .benefit-card p { color:var(--grey-600);font-size:15px;line-height:1.7; }
-    .benefit-card .benefit-highlight { margin-top:20px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:0.04em; }
-    .trust-strip { background:var(--noir-soft);padding:40px 0;overflow:hidden; }
-    .trust-inner { display:flex;align-items:center;gap:48px;justify-content:center;flex-wrap:wrap; }
-    .trust-item { display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.55);font-size:15px;white-space:nowrap; }
-    .trust-item svg { color:var(--teal);flex-shrink:0; }
-    .blog-section { background:var(--grey-100); }
-    .blog-coming-soon { border:2px dashed var(--grey-200);border-radius:var(--radius-xl);padding:64px 40px;text-align:center;background:rgba(255,255,255,0.6); }
-    .blog-topics { display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px; }
-    .topic-pill { padding:8px 18px;background:rgba(107,168,160,0.08);border:1px solid rgba(107,168,160,0.2);border-radius:100px;font-size:14px;font-weight:500;color:var(--teal-dark); }
-    @media (max-width:900px) {
-      .benefits-grid { grid-template-columns:1fr;gap:20px; }
-      .zone-inner-grid { grid-template-columns:1fr;gap:40px; }
-      .trust-inner { gap:16px 20px; }
-      .btn-cta-main { width:100%;justify-content:center;font-size:15px;padding:15px 24px; }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--bg);overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;}
+    img{max-width:100%;height:auto;display:block;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+    /* ── Animations ── */
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.8);}}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+    .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
+
+    /* ── Header ── */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:background .3s,padding .3s,box-shadow .3s;}
+    .nav.scrolled{background:rgba(0,24,64,.97);backdrop-filter:blur(12px);padding:14px 0;box-shadow:0 4px 24px rgba(0,47,186,.25);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;}
+    .nav-logo{height:34px;object-fit:contain;}
+    .nav-links{display:flex;align-items:center;gap:32px;}
+    .nav-links a{color:rgba(255,255,255,.75);font-size:14px;font-weight:500;letter-spacing:.02em;transition:color .2s;}
+    .nav-links a:hover{color:var(--yellow);}
+    .nav-cta{padding:10px 22px;background:var(--yellow);color:var(--text);font-weight:700;font-size:14px;border-radius:8px;transition:var(--ease);letter-spacing:.02em;}
+    .nav-cta:hover{background:var(--yellow-hover);transform:translateY(-1px);box-shadow:0 4px 16px rgba(255,212,0,.4);}
+
+    /* ── Hero ── */
+    .hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(160deg,#001229 0%,#002060 45%,#0047BA 100%);}
+    .hero-grid{position:absolute;inset:0;pointer-events:none;}
+    .hero-grid::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,174,239,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,174,239,.04) 1px,transparent 1px);background-size:64px 64px;}
+    .hero-grid::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent,transparent 119px,rgba(0,174,239,.07) 119px,rgba(0,174,239,.07) 120px);}
+    .hero-skyline{position:absolute;bottom:0;left:0;right:0;height:55%;pointer-events:none;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 0%,transparent 35%,rgba(0,18,41,.25) 65%,rgba(0,18,41,.55) 100%);pointer-events:none;}
+    .hero-content{position:relative;z-index:2;padding:120px 0 100px;max-width:780px;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:rgba(0,174,239,.12);border:1px solid rgba(0,174,239,.28);border-radius:100px;font-size:11px;font-weight:700;color:#00AEEF;letter-spacing:.09em;text-transform:uppercase;margin-bottom:32px;animation:fadeIn .6s ease both;}
+    .badge-dot{width:6px;height:6px;border-radius:50%;background:#00AEEF;animation:pulse 2s infinite;flex-shrink:0;}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8.5vw,108px);line-height:.93;color:var(--white);letter-spacing:.025em;margin-bottom:28px;animation:fadeInUp .7s ease .1s both;}
+    .hero h1 em{color:var(--yellow);font-style:normal;display:block;}
+    .hero-sub{font-size:18px;color:rgba(255,255,255,.72);max-width:54ch;margin-bottom:14px;font-weight:400;line-height:1.65;animation:fadeInUp .7s ease .2s both;}
+    .hero-tagline{font-size:14px;color:rgba(255,255,255,.45);max-width:52ch;margin-bottom:44px;line-height:1.65;padding-left:16px;border-left:2px solid rgba(0,174,239,.35);animation:fadeInUp .7s ease .25s both;}
+    .hero-btns{display:flex;align-items:center;gap:14px;flex-wrap:wrap;animation:fadeInUp .7s ease .3s both;}
+    .btn-yellow{display:inline-flex;align-items:center;gap:10px;padding:18px 40px;background:var(--yellow);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;border-radius:10px;transition:var(--ease);letter-spacing:.01em;white-space:nowrap;}
+    .btn-yellow:hover{background:var(--yellow-hover);transform:translateY(-3px);box-shadow:0 12px 36px rgba(255,212,0,.5);}
+    .btn-yellow svg{transition:transform .2s;}
+    .btn-yellow:hover svg{transform:translateX(4px);}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:17px 30px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.82);font-weight:600;font-size:15px;border-radius:10px;transition:var(--ease);white-space:nowrap;}
+    .btn-ghost:hover{border-color:rgba(255,255,255,.65);color:var(--white);background:rgba(255,255,255,.07);}
+
+    /* ── Wave dividers ── */
+    .wave{display:block;width:100%;overflow:hidden;line-height:0;margin-bottom:-1px;}
+    .wave svg{display:block;width:100%;}
+
+    /* ── Stats bar ── */
+    .stats-bar{background:var(--blue);padding:56px 0;position:relative;}
+    .stats-bar::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(255,255,255,.03) 79px,rgba(255,255,255,.03) 80px);}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);position:relative;}
+    .stat-item{text-align:center;padding:24px 16px;border-right:1px solid rgba(255,255,255,.1);}
+    .stat-item:last-child{border-right:none;}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,6vw,76px);color:var(--yellow);line-height:1;display:block;margin-bottom:8px;}
+    .stat-lbl{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.07em;font-weight:600;line-height:1.5;}
+
+    /* ── Trust ── */
+    .trust{background:var(--white);padding:36px 0;}
+    .trust-inner{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;}
+    .trust-item{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;font-weight:500;}
+    .trust-item svg{color:var(--blue);flex-shrink:0;}
+
+    /* ── Section header ── */
+    .section-header{margin-bottom:56px;}
+    .s-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;background:rgba(0,71,186,.07);border:1px solid rgba(0,71,186,.14);border-radius:100px;font-size:11px;font-weight:700;color:var(--blue);letter-spacing:.09em;text-transform:uppercase;margin-bottom:18px;}
+    .section-header h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(34px,4.5vw,54px);line-height:1.05;color:var(--text);letter-spacing:.025em;margin-bottom:14px;max-width:22ch;}
+    .section-header p{font-size:17px;color:var(--muted);max-width:52ch;line-height:1.65;}
+
+    /* ── Benefits ── */
+    .benefits{background:var(--bg);padding:100px 0;}
+    .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .b-card{background:rgba(255,255,255,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(0,71,186,.07);border-radius:var(--r-lg);padding:40px 36px;box-shadow:var(--shadow-md);transition:var(--ease);position:relative;overflow:hidden;}
+    .b-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blue-light));transform:scaleX(0);transform-origin:left;transition:transform .4s ease;}
+    .b-card:hover::before{transform:scaleX(1);}
+    .b-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+    .b-icon{width:52px;height:52px;background:rgba(0,71,186,.08);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:24px;color:var(--blue);}
+    .b-card h3{font-size:19px;font-weight:700;margin-bottom:12px;}
+    .b-card p{color:var(--muted);font-size:15px;line-height:1.7;}
+    .b-tag{display:inline-flex;align-items:center;gap:6px;margin-top:20px;padding:5px 14px;background:rgba(0,71,186,.06);border-radius:100px;font-size:12px;font-weight:700;color:var(--blue);}
+
+    /* ── Testimonials ── */
+    .testimonials{background:var(--white);padding:100px 0;}
+    .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;}
+    .t-card{background:var(--bg);border-radius:var(--r-lg);padding:36px 32px;border:1px solid rgba(0,71,186,.05);transition:var(--ease);position:relative;}
+    .t-card::before{content:'"';position:absolute;top:16px;right:24px;font-family:Georgia,serif;font-size:80px;color:rgba(0,71,186,.06);line-height:1;}
+    .t-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:rgba(0,71,186,.1);}
+    .stars{color:#F59E0B;font-size:17px;letter-spacing:2px;margin-bottom:16px;}
+    .t-text{font-size:15px;color:#374151;line-height:1.75;font-style:italic;margin-bottom:24px;}
+    .t-author{display:flex;align-items:center;gap:12px;}
+    .t-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-light));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--white);flex-shrink:0;}
+    .t-name{font-size:14px;font-weight:700;color:var(--text);}
+    .t-detail{font-size:12px;color:var(--light);margin-top:2px;}
+
+    /* ── Zone ── */
+    .zone{background:var(--blue);padding:100px 0;position:relative;overflow:hidden;}
+    .zone::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,.03) 59px,rgba(255,255,255,.03) 60px);}
+    .zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;}
+    .z-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;background:rgba(0,174,239,.14);border:1px solid rgba(0,174,239,.28);border-radius:100px;font-size:11px;font-weight:700;color:#00AEEF;letter-spacing:.09em;text-transform:uppercase;margin-bottom:22px;}
+    .zone h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(34px,4.5vw,54px);color:var(--white);line-height:1.05;letter-spacing:.025em;margin-bottom:18px;}
+    .zone-desc{color:rgba(255,255,255,.62);font-size:17px;line-height:1.65;max-width:42ch;}
+    .zone-list{list-style:none;margin-top:32px;display:flex;flex-direction:column;gap:14px;}
+    .zone-list li{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.82);font-size:16px;font-weight:500;}
+    .zone-list li svg{color:var(--yellow);flex-shrink:0;}
+    .z-card{background:rgba(255,255,255,.06);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:48px;}
+    .z-stats{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+    .z-stat{text-align:center;}
+    .z-stat .n{font-family:'Bebas Neue',sans-serif;font-size:52px;color:var(--yellow);line-height:1;display:block;margin-bottom:8px;}
+    .z-stat .l{font-size:13px;color:rgba(255,255,255,.45);line-height:1.45;}
+
+    /* ── CTA Final ── */
+    .cta-final{background:linear-gradient(135deg,#001840 0%,var(--blue) 50%,var(--blue-light) 100%);padding:100px 0;text-align:center;position:relative;overflow:hidden;}
+    .cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(0,174,239,.14) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(255,212,0,.07) 0%,transparent 60%);}
+    .cta-final h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,6vw,72px);color:var(--white);margin-bottom:18px;letter-spacing:.025em;position:relative;}
+    .cta-final .sub{color:rgba(255,255,255,.7);font-size:18px;margin:0 auto 48px;max-width:50ch;position:relative;}
+    .cta-note{color:rgba(255,255,255,.35);font-size:13px;margin-top:20px;position:relative;}
+
+    /* ── Footer ── */
+    .footer{background:#080C18;padding:60px 0 32px;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07);}
+    .f-logo{height:30px;margin-bottom:16px;}
+    .f-brand p{color:rgba(255,255,255,.4);font-size:14px;line-height:1.7;max-width:30ch;}
+    .f-col h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:rgba(255,255,255,.3);margin-bottom:20px;}
+    .f-col ul{list-style:none;}
+    .f-col li+li{margin-top:12px;}
+    .f-col a{color:rgba(255,255,255,.55);font-size:14px;transition:color .2s;}
+    .f-col a:hover{color:var(--yellow);}
+    .f-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;}
+    .f-bottom p{color:rgba(255,255,255,.25);font-size:13px;}
+
+    /* ── WhatsApp ── */
+    .wa{position:fixed;bottom:28px;right:28px;z-index:50;display:flex;align-items:center;gap:10px;padding:14px 22px;background:#25D366;color:white;border-radius:100px;box-shadow:0 8px 32px rgba(37,211,102,.4);font-weight:600;font-size:14px;transition:var(--ease);}
+    .wa:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.5);}
+    .wa svg{width:22px;height:22px;flex-shrink:0;}
+
+    /* ── Responsive ── */
+    @media(max-width:1024px){
+      .benefits-grid{grid-template-columns:1fr 1fr;}
+      .t-grid{grid-template-columns:1fr 1fr;}
+      .zone-grid{grid-template-columns:1fr;gap:48px;}
     }
-    @media (max-width:768px) {
-      .hero-bottom { gap:24px; }
-      .hero-stat .stat-number { font-size:2rem; }
+    @media(max-width:768px){
+      .stats-grid{grid-template-columns:repeat(2,1fr);}
+      .stat-item:nth-child(2){border-right:none;}
+      .benefits-grid{grid-template-columns:1fr;}
+      .t-grid{grid-template-columns:1fr;}
+      .hero-btns{flex-direction:column;align-items:stretch;}
+      .btn-yellow,.btn-ghost{justify-content:center;}
+      .nav-links{display:none;}
+      .footer-grid{grid-template-columns:1fr;gap:32px;}
+      .trust-inner{gap:14px 24px;}
     }
-    @media (max-width:600px) {
-      .cta-card { padding:40px 28px; }
+    @media(max-width:480px){
+      .wa .wa-lbl{display:none;}
+      .wa{padding:14px;border-radius:50%;}
+      .f-bottom{flex-direction:column;gap:8px;text-align:center;}
     }
   </style>
 </head>
 <body>
 
-  <header class="site-header" id="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/"><img src="assets/logo-blanc.png" alt="Hostopia" class="header-logo"></a>
-        <nav class="header-nav" aria-label="Navigation principale">
-          <a href="/">Accueil</a>
-          <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-          <a href="/blog">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">Prendre RDV</a>
-      </div>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/"><img src="assets/logo-blanc.png" alt="Hostopia" class="nav-logo"></a>
+      <nav class="nav-links">
+        <a href="/">Accueil</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="/blog">Blog</a>
+      </nav>
+      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre RDV</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
+<main>
 
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="orb orb-teal orb-1"></div>
-      <div class="orb orb-orange orb-2"></div>
-      <div class="orb orb-teal-light orb-3"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge reveal">
-            <span class="badge"><span class="badge-dot"></span>Conciergerie Airbnb Premium — Courbevoie, 92</span>
-          </div>
-          <h1 id="hero-title" class="reveal reveal-delay-1">
-            Vous êtes propriétaire à Courbevoie et souhaitez <span>faire du Airbnb&nbsp;?</span>
-          </h1>
-          <p class="hero-sub reveal reveal-delay-2">Courbevoie borde La Défense, 1er quartier d'affaires européen. Voyageurs d'affaires, cadres, consultants — demande locative forte toute l'année.</p>
-          <div class="hero-bottom reveal reveal-delay-3">
-            <div class="hero-stat"><span class="stat-number">3×</span><small>plus de revenus vs location classique</small></div>
-            <div class="hero-stat"><span class="stat-number">20+</span><small>logements gérés en Île-de-France</small></div>
-            <div class="hero-stat"><span class="stat-number">15h</span><small>de gestion économisées par semaine</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-grid"></div>
 
-    <div class="trust-strip">
-      <div class="container">
-        <div class="trust-inner">
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            Courbevoie · La Défense · Neuilly-sur-Seine
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            15 ans d'expertise immobilière
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Assurance &amp; sélection des profils
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            Disponibles 7j/7
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- SKYLINE SVG — La Défense stylisée -->
+  <div class="hero-skyline">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice" style="width:100%;height:100%;">
+      <defs>
+        <linearGradient id="tFade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#001840" stop-opacity=".95"/>
+          <stop offset="100%" stop-color="#000C1F" stop-opacity="1"/>
+        </linearGradient>
+        <pattern id="wg" x="0" y="0" width="10" height="14" patternUnits="userSpaceOnUse">
+          <rect width="9" height="13" fill="none" stroke="rgba(0,174,239,.1)" stroke-width=".5"/>
+        </pattern>
+        <pattern id="wg2" x="0" y="0" width="8" height="12" patternUnits="userSpaceOnUse">
+          <rect width="7" height="11" fill="none" stroke="rgba(0,174,239,.08)" stroke-width=".4"/>
+        </pattern>
+        <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="rgba(0,174,239,0)"/>
+          <stop offset="45%" stop-color="rgba(0,174,239,.07)"/>
+          <stop offset="100%" stop-color="rgba(0,174,239,0)"/>
+        </linearGradient>
+        <linearGradient id="topBlend" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#002060" stop-opacity="1"/>
+          <stop offset="40%" stop-color="#001229" stop-opacity=".7"/>
+          <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
 
-    <section class="cta-section section-sm" aria-labelledby="cta-title">
-      <div class="container" style="display:flex;justify-content:center;">
-        <div class="cta-card reveal">
-          <div class="badge" style="background:rgba(107,168,160,0.08);">
-            <span class="badge-dot"></span>Appel découverte gratuit — 30 min
-          </div>
-          <h2 id="cta-title">Parlons de votre projet Airbnb à Courbevoie</h2>
-          <p>Estimez votre potentiel locatif avec l'un de nos experts. Réponse sous 24h, sans engagement.</p>
-          <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-cta-main" target="_blank" rel="noopener">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Prendre rendez-vous avec un expert
-          </a>
-          <p class="cta-note">Sans engagement · Réponse sous 24h · Appel visio ou téléphone</p>
-        </div>
-      </div>
-    </section>
+      <!-- Far background towers -->
+      <rect x="0"    y="260" width="28" height="160" fill="#00102A" opacity=".6"/>
+      <rect x="35"   y="240" width="20" height="180" fill="#00102A" opacity=".55"/>
+      <rect x="1390" y="250" width="30" height="170" fill="#00102A" opacity=".6"/>
+      <rect x="1420" y="235" width="20" height="185" fill="#00102A" opacity=".5"/>
 
-    <section class="benefits-section section" aria-labelledby="benefits-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Pourquoi choisir Hostopia</span>
-          <div class="divider divider-center"></div>
-          <h2 id="benefits-title">Ce que vous gagnez en nous confiant votre bien à Courbevoie</h2>
-          <p>Votre bien à Courbevoie a un potentiel locatif exceptionnel. On s'en occupe.</p>
-        </header>
-        <div class="benefits-grid">
-          <article class="glass-card gradient-border benefit-card reveal">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-            <h3>Revenus optimisés</h3>
-            <p>Tarification dynamique par algorithme, optimisation du taux d'occupation, pricing selon les événements locaux. Jusqu'à 3× plus que la location longue durée.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>+40% vs gestion en solo</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-1">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-            <h3>Gestion 100% déléguée</h3>
-            <p>Ménage professionnel, check-in/check-out autonome, communication voyageurs, linge hôtelier. Vous ne faites rien.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15h/semaine récupérées</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-2">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <h3>Tranquillité d'esprit</h3>
-            <p>Sélection rigoureuse des profils voyageurs, assurance dommages, suivi qualité permanent. Votre bien est entre de bonnes mains.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Zéro mauvaise surprise</span>
-          </article>
-        </div>
-      </div>
-    </section>
+      <!-- LEFT CLUSTER -->
+      <!-- Tower 1: slim with glass -->
+      <rect x="110" y="130" width="50" height="290" fill="url(#tFade)"/>
+      <rect x="111" y="131" width="48" height="288" fill="url(#wg2)"/>
+      <rect x="111" y="131" width="48" height="288" fill="url(#sheen)"/>
+      <line x1="135" y1="130" x2="135" y2="105" stroke="rgba(0,174,239,.45)" stroke-width="1.5"/>
+      <circle cx="135" cy="104" r="2" fill="rgba(255,212,0,.5)"/>
 
-    <section class="section" style="background:var(--noir);" aria-labelledby="zone-title">
-      <div class="container">
-        <div class="zone-inner-grid">
-          <div class="reveal">
-            <span class="badge">Zone d'intervention</span>
-            <div class="divider"></div>
-            <h2 id="zone-title" style="color:var(--blanc);">Experts du marché Courbevoie & La Défense</h2>
-            <p style="color:rgba(255,255,255,0.6);font-size:17px;margin-top:20px;max-width:45ch;">Au cœur du premier quartier d'affaires d'Europe. Une demande de voyageurs professionnels constante, 12 mois sur 12.</p>
-            <ul style="margin-top:32px;display:flex;flex-direction:column;gap:16px;">
-              <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Courbevoie</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>La Défense</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Neuilly-sur-Seine</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Levallois-Perret</li>
-            </ul>
-          </div>
-          <div class="reveal reveal-delay-1">
-            <div class="glass-card-dark" style="padding:48px;border-radius:var(--radius-xl);">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">20+</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">logements en gestion en Île-de-France</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">95%</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">taux d'occupation moyen en haute saison</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">3×</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">de revenus vs location longue durée</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">15</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">ans d'expertise immobilière</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Tower 2: stepped -->
+      <rect x="175" y="165" width="65" height="255" fill="url(#tFade)"/>
+      <rect x="176" y="166" width="63" height="253" fill="url(#wg)"/>
+      <rect x="183" y="140" width="48" height="27" fill="url(#tFade)"/>
 
-    <section class="blog-section section" aria-labelledby="blog-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Ressources &amp; Conseils</span>
-          <div class="divider divider-center"></div>
-          <h2 id="blog-title">Le blog des propriétaires Airbnb à Courbevoie</h2>
-          <p>Conseils, stratégies et retours d'expérience pour maximiser vos revenus locatifs à Courbevoie.</p>
-        </header>
-        <div class="blog-coming-soon reveal">
-          <div style="font-size:48px;margin-bottom:20px;">✍️</div>
-          <h3>Contenu à venir</h3>
-          <p>Nos experts préparent des guides pratiques sur l'investissement Airbnb à Courbevoie, la fiscalité LMNP, et les meilleures pratiques pour maximiser vos revenus.</p>
-          <div class="blog-topics">
-            <span class="topic-pill">Investissement Airbnb Courbevoie</span>
-            <span class="topic-pill">Fiscalité LMNP</span>
-            <span class="topic-pill">Revenus locatifs 92</span>
-            <span class="topic-pill">Gestion déléguée</span>
-          </div>
-          <a href="/blog" class="btn btn-outline" style="margin-top:32px;">Voir tous les articles <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-    </section>
+      <!-- Tower 3: skinny -->
+      <rect x="255" y="155" width="38" height="265" fill="url(#tFade)"/>
+      <rect x="256" y="156" width="36" height="263" fill="url(#wg2)"/>
+      <rect x="256" y="156" width="36" height="263" fill="url(#sheen)"/>
 
-    <section class="section" style="background:linear-gradient(135deg,var(--teal-dark) 0%,var(--teal) 50%,var(--orange) 100%);text-align:center;" aria-label="CTA final">
-      <div class="container">
-        <h2 style="color:var(--blanc);margin-bottom:16px;" class="reveal">Prêt à rentabiliser votre bien à Courbevoie&nbsp;?</h2>
-        <p style="color:rgba(255,255,255,0.8);font-size:18px;margin:0 auto 40px;max-width:50ch;" class="reveal reveal-delay-1">Rejoignez les propriétaires qui ont délégué leur gestion Airbnb et optimisé leurs revenus.</p>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-dark reveal reveal-delay-2" style="padding:18px 44px;font-size:17px;" target="_blank" rel="noopener">
-          Prendre rendez-vous — c'est gratuit
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <!-- LOW CONNECTOR -->
+      <rect x="110" y="355" width="183" height="65" fill="#000C1F"/>
+
+      <!-- CENTER-LEFT -->
+      <!-- Tower 4: tall flagship -->
+      <rect x="345" y="55" width="72" height="365" fill="url(#tFade)"/>
+      <rect x="346" y="56" width="70" height="363" fill="url(#wg)"/>
+      <rect x="346" y="56" width="70" height="363" fill="url(#sheen)"/>
+      <polygon points="345,55 417,55 413,33 349,33" fill="url(#tFade)"/>
+      <line x1="381" y1="33" x2="381" y2="8" stroke="rgba(0,174,239,.55)" stroke-width="1.5"/>
+      <circle cx="381" cy="7" r="2.5" fill="rgba(255,212,0,.7)"/>
+
+      <!-- Tower 5: wide curtain wall -->
+      <rect x="432" y="95" width="82" height="325" fill="url(#tFade)"/>
+      <rect x="433" y="96" width="80" height="323" fill="url(#wg)"/>
+      <line x1="473" y1="96" x2="473" y2="420" stroke="rgba(0,174,239,.1)" stroke-width="2"/>
+
+      <!-- GRANDE ARCHE — center ── -->
+      <rect x="540" y="42" width="148" height="378" fill="url(#tFade)"/>
+      <rect x="541" y="43" width="146" height="376" fill="url(#wg)" opacity=".65"/>
+      <!-- Hollow arch interior -->
+      <rect x="573" y="68" width="82" height="240" fill="rgba(0,8,30,.85)"/>
+      <rect x="574" y="69" width="80" height="238" fill="rgba(0,174,239,.025)"/>
+      <!-- Top arch beam -->
+      <rect x="573" y="42" width="82" height="28" fill="#001229"/>
+      <!-- Lateral floor lines -->
+      <line x1="542" y1="170" x2="572" y2="170" stroke="rgba(0,174,239,.09)" stroke-width="1"/>
+      <line x1="542" y1="220" x2="572" y2="220" stroke="rgba(0,174,239,.09)" stroke-width="1"/>
+      <line x1="656" y1="170" x2="686" y2="170" stroke="rgba(0,174,239,.09)" stroke-width="1"/>
+      <line x1="656" y1="220" x2="686" y2="220" stroke="rgba(0,174,239,.09)" stroke-width="1"/>
+
+      <!-- CENTER-RIGHT -->
+      <!-- Tower 6: Tour First-inspired (tapered) -->
+      <polygon points="745,45 793,45 808,420 730,420" fill="url(#tFade)"/>
+      <rect x="731" y="46" width="76" height="373" fill="url(#wg2)" opacity=".65"/>
+      <rect x="731" y="46" width="76" height="373" fill="url(#sheen)"/>
+      <line x1="769" y1="45" x2="769" y2="18" stroke="rgba(0,174,239,.5)" stroke-width="1.5"/>
+      <circle cx="769" cy="17" r="2.5" fill="rgba(255,212,0,.6)"/>
+
+      <!-- Tower 7 -->
+      <rect x="825" y="98" width="62" height="322" fill="url(#tFade)"/>
+      <rect x="826" y="99" width="60" height="320" fill="url(#wg)"/>
+      <rect x="831" y="74" width="52" height="26" fill="url(#tFade)"/>
+
+      <!-- Tower 8: wide mirrored facade -->
+      <rect x="902" y="138" width="92" height="282" fill="url(#tFade)"/>
+      <rect x="903" y="139" width="90" height="280" fill="url(#wg)"/>
+      <line x1="933" y1="139" x2="933" y2="420" stroke="rgba(0,174,239,.07)" stroke-width="1.5"/>
+      <line x1="963" y1="139" x2="963" y2="420" stroke="rgba(0,174,239,.07)" stroke-width="1.5"/>
+
+      <!-- RIGHT CLUSTER -->
+      <!-- Tower 9 -->
+      <rect x="1012" y="86" width="56" height="334" fill="url(#tFade)"/>
+      <rect x="1013" y="87" width="54" height="332" fill="url(#wg2)"/>
+      <rect x="1013" y="87" width="54" height="332" fill="url(#sheen)"/>
+      <line x1="1040" y1="86" x2="1040" y2="60" stroke="rgba(0,174,239,.4)" stroke-width="1.5"/>
+
+      <!-- Tower 10: tallest right -->
+      <rect x="1084" y="28" width="46" height="392" fill="url(#tFade)"/>
+      <rect x="1085" y="29" width="44" height="390" fill="url(#wg2)"/>
+      <line x1="1107" y1="28" x2="1107" y2="4" stroke="rgba(0,174,239,.6)" stroke-width="1.5"/>
+      <circle cx="1107" cy="3" r="3" fill="rgba(255,212,0,.75)"/>
+
+      <!-- Tower 11 -->
+      <rect x="1146" y="118" width="66" height="302" fill="url(#tFade)"/>
+      <rect x="1147" y="119" width="64" height="300" fill="url(#wg)"/>
+
+      <!-- Tower 12: stepped complex -->
+      <rect x="1228" y="155" width="52" height="265" fill="url(#tFade)"/>
+      <rect x="1238" y="126" width="32" height="294" fill="url(#tFade)"/>
+      <rect x="1239" y="127" width="30" height="292" fill="url(#wg2)"/>
+
+      <!-- Tower 13 -->
+      <rect x="1298" y="178" width="44" height="242" fill="url(#tFade)"/>
+      <rect x="1299" y="179" width="42" height="240" fill="url(#wg2)"/>
+
+      <!-- Low connectors -->
+      <rect x="540"  y="360" width="354" height="60" fill="#000C1F"/>
+      <rect x="1012" y="365" width="330" height="55" fill="#000C1F"/>
+      <rect x="345"  y="370" width="100" height="50" fill="#000C1F"/>
+
+      <!-- Ground -->
+      <rect x="0" y="390" width="1440" height="30" fill="#000C1F"/>
+
+      <!-- Seine shimmer -->
+      <rect x="0" y="405" width="1440" height="15" fill="rgba(0,47,186,.5)"/>
+      <line x1="180" y1="410" x2="340" y2="410" stroke="rgba(0,174,239,.18)" stroke-width="1"/>
+      <line x1="580" y1="413" x2="780" y2="413" stroke="rgba(0,174,239,.12)" stroke-width="1"/>
+      <line x1="950" y1="408" x2="1100" y2="408" stroke="rgba(0,174,239,.14)" stroke-width="1"/>
+
+      <!-- Hero blend from top -->
+      <rect width="1440" height="420" fill="url(#topBlend)"/>
+    </svg>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><div class="badge-dot"></div>Conciergerie Airbnb Premium · Courbevoie, 92</div>
+      <h1>Votre bien mérite<br>mieux qu'une<br><em>gestion approximative.</em></h1>
+      <p class="hero-sub">Conciergerie spécialisée à Courbevoie — expertise locale, revenus optimisés, zéro tracas.</p>
+      <p class="hero-tagline">Courbevoie borde La Défense, 1er quartier d'affaires européen. Voyageurs d'affaires, cadres, consultants — demande locative forte toute l'année.</p>
+      <div class="hero-btns">
+        <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-yellow" target="_blank" rel="noopener">
+          Estimer mes revenus
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="footer-logo">
-          <p>Conciergerie Airbnb premium à Courbevoie. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
-        </div>
-        <nav class="footer-col">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener">Prendre RDV</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=33767209266" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="mailto:contact@hostopia.fr">Email</a></li>
-            <li><a href="https://hostopia.fr" target="_blank" rel="noopener">hostopia.fr</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hostopia. Tous droits réservés.</p>
-        <p>Courbevoie · La Défense · Neuilly-sur-Seine</p>
+        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-ghost" target="_blank" rel="noopener">Prendre rendez-vous</a>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0"
-     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="wa-label">Discutons sur WhatsApp</span>
-  </a>
+<!-- wave hero→stats -->
+<div class="wave" style="background:var(--blue);margin-top:-2px;">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,0 C360,56 720,28 1080,48 C1260,56 1380,36 1440,44 L1440,0Z" fill="#001229"/>
+  </svg>
+</div>
 
-  <script>
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 40); }, {passive:true});
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } }),
-      {threshold:0.12, rootMargin:'0px 0px -40px 0px'}
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<!-- ══════════════════════════════════════
+     STATS BAR
+══════════════════════════════════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><span class="stat-num">3×</span><span class="stat-lbl">plus de revenus<br>vs location classique</span></div>
+      <div class="stat-item reveal d1"><span class="stat-num">20+</span><span class="stat-lbl">logements gérés<br>en Île-de-France</span></div>
+      <div class="stat-item reveal d2"><span class="stat-num">100%</span><span class="stat-lbl">géré en<br>Île-de-France</span></div>
+      <div class="stat-item reveal d3"><span class="stat-num">15h</span><span class="stat-lbl">de gestion<br>économisées / sem.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- wave stats→trust -->
+<div class="wave" style="background:var(--white);">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,56 C480,0 960,36 1440,14 L1440,56Z" fill="var(--blue)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════
+     TRUST STRIP
+══════════════════════════════════════ -->
+<section class="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Courbevoie · La Défense · Neuilly-sur-Seine
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        15 ans d'expertise immobilière
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Assurance &amp; sélection des profils
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Disponibles 7j/7
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wave trust→benefits -->
+<div class="wave" style="background:var(--bg);">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,0 C480,56 960,12 1440,40 L1440,56 L0,56Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════
+     BENEFITS
+══════════════════════════════════════ -->
+<section class="benefits">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="s-badge">Pourquoi choisir Hostopia</div>
+      <h2>Ce que vous gagnez en nous confiant votre bien à Courbevoie</h2>
+      <p>Votre appartement à Courbevoie a un potentiel locatif exceptionnel grâce à La Défense. On s'en occupe entièrement.</p>
+    </div>
+    <div class="benefits-grid">
+      <article class="b-card reveal">
+        <div class="b-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <h3>Revenus optimisés</h3>
+        <p>Tarification dynamique par algorithme, pricing selon les salons professionnels de La Défense, optimisation quotidienne du taux d'occupation.</p>
+        <span class="b-tag"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>+40% vs gestion en solo</span>
+      </article>
+      <article class="b-card reveal d1">
+        <div class="b-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Gestion 100% déléguée</h3>
+        <p>Ménage professionnel, check-in/check-out autonome, communication voyageurs 24h/24, linge hôtelier. Vous ne faites rien.</p>
+        <span class="b-tag"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15h/semaine récupérées</span>
+      </article>
+      <article class="b-card reveal d2">
+        <div class="b-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Tranquillité d'esprit</h3>
+        <p>Sélection rigoureuse des profils voyageurs, assurance dommages, suivi qualité. Une clientèle professionnelle soigneuse — votre bien entre de bonnes mains.</p>
+        <span class="b-tag"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Zéro mauvaise surprise</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- wave benefits→testimonials -->
+<div class="wave" style="background:var(--white);">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,56 C360,0 720,40 1080,16 C1260,4 1380,36 1440,22 L1440,56Z" fill="var(--bg)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="s-badge">Ils nous font confiance</div>
+      <h2>Ce que disent nos propriétaires à Courbevoie</h2>
+      <p>Des propriétaires qui ont délégué leur gestion et transformé leur bien en actif performant.</p>
+    </div>
+    <div class="t-grid">
+      <article class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"Mon appartement était vide 3 semaines par mois en location classique. Avec Hostopia, il est occupé à 92%. Les revenus ont explosé dès le 2e mois."</p>
+        <div class="t-author">
+          <div class="t-avatar">T</div>
+          <div><div class="t-name">Thomas R.</div><div class="t-detail">T2 vue La Défense · Courbevoie</div></div>
+        </div>
+      </article>
+      <article class="t-card reveal d1">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"La clientèle business est parfaite : silencieuse, soigneuse, bien notée. Hostopia a tout configuré pour attirer ce profil. Résultat impeccable."</p>
+        <div class="t-author">
+          <div class="t-avatar">I</div>
+          <div><div class="t-name">Isabelle V.</div><div class="t-detail">Studio cadres dirigeants · Neuilly-sur-Seine</div></div>
+        </div>
+      </article>
+      <article class="t-card reveal d2">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"J'avais peur de me lancer dans l'Airbnb seul. Avec Hostopia, j'ai délégué 100% dès le départ. 6 mois plus tard, je cherche un 2ème bien à acheter."</p>
+        <div class="t-author">
+          <div class="t-avatar">L</div>
+          <div><div class="t-name">Laurent D.</div><div class="t-detail">Appartement 3 pièces · Courbevoie</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- wave testimonials→zone -->
+<div class="wave" style="background:var(--blue);">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,0 C480,56 960,16 1440,44 L1440,56 L0,56Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════
+     ZONE
+══════════════════════════════════════ -->
+<section class="zone">
+  <div class="container">
+    <div class="zone-grid">
+      <div class="reveal">
+        <div class="z-badge">Zone d'intervention</div>
+        <h2>Experts du marché Courbevoie &amp; La Défense</h2>
+        <p class="zone-desc">Au cœur du premier quartier d'affaires d'Europe. Une demande de voyageurs professionnels constante, 12 mois sur 12.</p>
+        <ul class="zone-list">
+          <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Courbevoie</li>
+          <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>La Défense</li>
+          <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Neuilly-sur-Seine</li>
+          <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Levallois-Perret</li>
+        </ul>
+      </div>
+      <div class="z-card reveal d1">
+        <div class="z-stats">
+          <div class="z-stat"><span class="n">20+</span><span class="l">logements en gestion en Île-de-France</span></div>
+          <div class="z-stat"><span class="n">95%</span><span class="l">taux d'occupation moyen en haute saison</span></div>
+          <div class="z-stat"><span class="n">3×</span><span class="l">de revenus vs location longue durée</span></div>
+          <div class="z-stat"><span class="n">15</span><span class="l">ans d'expertise immobilière</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wave zone→cta -->
+<div class="wave" style="background:linear-gradient(135deg,#001840,#0047BA,#00AEEF);">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" style="height:56px;">
+    <path d="M0,56 C480,0 960,40 1440,12 L1440,56Z" fill="var(--blue)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════
+     CTA FINAL
+══════════════════════════════════════ -->
+<section class="cta-final">
+  <div class="container">
+    <h2 class="reveal">Prêt à rentabiliser<br>votre bien à Courbevoie&nbsp;?</h2>
+    <p class="sub reveal d1">Rejoignez les propriétaires qui ont délégué leur gestion Airbnb et transformé leur appartement en actif performant.</p>
+    <div style="position:relative;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-yellow reveal d2" target="_blank" rel="noopener" style="font-size:17px;padding:20px 52px;">
+        Estimer mes revenus gratuitement
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <p class="cta-note reveal d3">Sans engagement · Réponse sous 24h · Appel visio ou téléphone</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <img src="assets/logo-blanc.png" alt="Hostopia" class="f-logo">
+        <p>Conciergerie Airbnb premium à Courbevoie. Nous gérons votre bien pour maximiser vos revenus dans les Hauts-de-Seine.</p>
+      </div>
+      <nav class="f-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener">Prendre RDV</a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=33767209266" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:contact@hostopia.fr">Email</a></li>
+          <li><a href="https://hostopia.fr" target="_blank" rel="noopener">hostopia.fr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>© 2026 Hostopia. Tous droits réservés.</p>
+      <p>Courbevoie · La Défense · Neuilly-sur-Seine</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+Hostopia+%E2%80%94+je+suis+propri%C3%A9taire+%C3%A0+Courbevoie+et+je+voudrais+en+savoir+plus+sur+la+gestion+Airbnb."
+   class="wa" target="_blank" rel="noopener" aria-label="WhatsApp Hostopia">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-lbl">Discutons sur WhatsApp</span>
+</a>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+  const io = new IntersectionObserver(
+    es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }),
+    {threshold:.1, rootMargin:'0px 0px -40px 0px'}
+  );
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
