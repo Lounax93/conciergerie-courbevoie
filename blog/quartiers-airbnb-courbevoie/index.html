@@ -74,63 +74,103 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/base.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body{background:#0A0A0A;color:rgba(255,255,255,.75);}
-    .article-content h2{color:var(--blanc);margin-top:48px;margin-bottom:20px;font-size:clamp(1.4rem,2.5vw,1.8rem);}
-    .article-content h3{color:var(--teal-light);margin-top:32px;margin-bottom:14px;font-size:clamp(1.15rem,2vw,1.4rem);}
-    .article-content p{margin-bottom:18px;font-size:16.5px;line-height:1.8;color:rgba(255,255,255,.7);}
-    .article-content ul,.article-content ol{margin-bottom:20px;padding-left:24px;color:rgba(255,255,255,.7);line-height:1.8;}
-    .article-content li{margin-bottom:10px;}
-    .article-content strong{color:var(--blanc);}
-    .article-content a{color:var(--teal-light);text-decoration:underline;}
-    .article-content a:hover{color:var(--blanc);}
-    .table-wrap{overflow-x:auto;margin:32px 0;border-radius:var(--radius-md);border:1px solid rgba(255,255,255,.08);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{--blue:#0047BA;--blue-deep:#002F80;--blue-night:#001229;--blue-light:#00AEEF;--yellow:#FFD400;--yellow-hover:#E6BF00;--bg:#F5F7FA;--white:#FFFFFF;--text:#1A1A1A;--muted:#4B5563;--shadow-sm:0 1px 3px rgba(0,0,0,.06);--shadow-md:0 4px 16px rgba(0,71,186,.08),0 2px 8px rgba(0,0,0,.04);--r:12px;--r-lg:20px;--ease:0.3s cubic-bezier(.4,0,.2,1);}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--bg);overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.8);}}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,24,64,.97);backdrop-filter:blur(12px);padding:14px 0;box-shadow:0 4px 24px rgba(0,47,186,.25);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;}
+    .nav-logo{height:34px;}
+    .nav-links{display:flex;align-items:center;gap:32px;}
+    .nav-links a{color:rgba(255,255,255,.75);font-size:14px;font-weight:500;}
+    .nav-links a:hover{color:var(--yellow);}
+    .nav-cta{padding:10px 22px;background:var(--yellow);color:var(--text);font-weight:700;font-size:14px;border-radius:8px;}
+    .hero-article{background:linear-gradient(160deg,#001229 0%,#002060 45%,#0047BA 100%);padding:140px 0 80px;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:rgba(0,174,239,.12);border:1px solid rgba(0,174,239,.28);border-radius:100px;font-size:11px;font-weight:700;color:#00AEEF;letter-spacing:.09em;text-transform:uppercase;margin-bottom:28px;}
+    .badge-dot{width:6px;height:6px;border-radius:50%;background:#00AEEF;animation:pulse 2s infinite;}
+    .hero-article h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,6vw,72px);line-height:.95;color:var(--white);letter-spacing:.025em;margin-bottom:20px;max-width:16ch;}
+    .hero-meta{font-size:14px;color:rgba(255,255,255,.5);display:flex;gap:16px;margin-bottom:16px;}
+    .hero-meta span{background:rgba(255,255,255,.08);padding:4px 12px;border-radius:6px;font-size:12px;font-weight:600;}
+    .hero-sub{font-size:17px;color:rgba(255,255,255,.65);max-width:60ch;line-height:1.7;}
+    .section{padding:64px 0;}
+    .article-wrap{max-width:780px;margin:0 auto;}
+    .article-content h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,38px);color:var(--blue-night);margin-top:48px;margin-bottom:16px;line-height:1.1;letter-spacing:.02em;}
+    .article-content h3{font-size:20px;font-weight:700;color:var(--blue);margin-top:32px;margin-bottom:12px;}
+    .article-content p{margin-bottom:18px;font-size:16.5px;line-height:1.8;color:#374151;}
+    .article-content ul,.article-content ol{margin-bottom:20px;padding-left:24px;color:#374151;line-height:1.8;}
+    .article-content strong{color:var(--text);}
+    .article-content a{color:var(--blue);font-weight:600;text-decoration:underline;}
+    .table-wrap{overflow-x:auto;margin:32px 0;border-radius:var(--r);border:1px solid rgba(0,71,186,.1);}
     .table-wrap table{width:100%;border-collapse:collapse;font-size:15px;}
-    .table-wrap th{background:rgba(107,168,160,.15);color:var(--teal-light);padding:14px 16px;text-align:left;font-weight:600;white-space:nowrap;}
-    .table-wrap td{padding:12px 16px;border-top:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.7);}
-    .table-wrap tr:nth-child(even) td{background:rgba(255,255,255,.02);}
-    .faq-item{border-bottom:1px solid rgba(255,255,255,.06);padding:20px 0;}
-    .faq-item:first-child{padding-top:0;}
-    .faq-question{font-weight:600;font-size:17px;color:var(--blanc);margin-bottom:10px;cursor:pointer;display:flex;align-items:center;gap:12px;}
-    .faq-question::before{content:'Q:';color:var(--teal);font-weight:800;}
-    .faq-answer{padding-left:28px;color:rgba(255,255,255,.7);font-size:15.5px;line-height:1.7;}
-    .faq-answer strong{color:var(--blanc);}
+    .table-wrap th{background:rgba(0,71,186,.05);color:var(--blue);padding:14px 16px;text-align:left;font-weight:700;white-space:nowrap;font-size:13px;text-transform:uppercase;letter-spacing:.05em;}
+    .table-wrap td{padding:12px 16px;border-top:1px solid rgba(0,71,186,.06);color:#374151;}
+    .info-box{background:rgba(0,71,186,.04);border-left:3px solid var(--blue);border-radius:0 var(--r) var(--r) 0;padding:20px 24px;margin:28px 0;}
+    .faq-section{background:var(--white);border-radius:var(--r-lg);padding:48px;margin-top:48px;box-shadow:var(--shadow-sm);}
+    .faq-section h2{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--blue-night);margin-bottom:32px;text-align:center;}
+    .faq-item{border-bottom:1px solid rgba(0,71,186,.06);padding:20px 0;}
+    .faq-q{font-weight:600;font-size:16px;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;}
+    .faq-q::after{content:'+';font-size:20px;color:var(--blue);font-weight:700;}
+    .faq-item.open .faq-q::after{content:'−';}
+    .faq-a{padding-top:14px;color:var(--muted);font-size:15px;line-height:1.7;display:none;}
+    .faq-item.open .faq-a{display:block;}
+    .cta-block{background:linear-gradient(135deg,#001840 0%,var(--blue) 50%,var(--blue-light) 100%);border-radius:var(--r-lg);padding:48px 36px;text-align:center;margin:48px 0;}
+    .cta-block h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,40px);color:var(--white);margin-bottom:12px;letter-spacing:.025em;}
+    .cta-block p{color:rgba(255,255,255,.75);margin-bottom:28px;font-size:16px;max-width:45ch;margin:0 auto 28px;}
+    .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+    .btn-yellow{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--yellow);color:var(--text);font-weight:800;font-size:15px;border-radius:10px;}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.85);font-weight:600;font-size:14px;border-radius:10px;}
+    .wa{position:fixed;bottom:28px;right:28px;z-index:50;display:flex;align-items:center;gap:10px;padding:14px 22px;background:#25D366;color:white;border-radius:100px;box-shadow:0 8px 32px rgba(37,211,102,.4);font-weight:600;font-size:14px;cursor:pointer;}
+    .wa svg{width:22px;height:22px;}
+    .footer{background:#080C18;padding:48px 0 28px;}
+    .footer p{color:rgba(255,255,255,.25);font-size:13px;text-align:center;}
     @media(max-width:768px){
-      .table-wrap th,.table-wrap td{padding:10px 12px;font-size:14px;}
+      .hero-article{padding:100px 0 60px;}
+      .hero-article h1{font-size:clamp(30px,8vw,44px);}
+      .nav-links{display:none;}
+      .faq-section{padding:28px 20px;}
+      .cta-block{padding:32px 20px;}
+      .cta-btns{flex-direction:column;}
+      .wa .wa-lbl{display:none;}
+      .wa{padding:14px;border-radius:50%;}
     }
   </style>
 </head>
 <body>
-  <header class="site-header scrolled">
-    <div class="container">
-      <div class="header-inner">
-        <a href="../../"><img src="../../assets/logo-blanc.png" alt="Hostopia" class="header-logo"></a>
-        <nav class="header-nav">
-          <a href="../../">Accueil</a>
-          <a href="../../qui-sommes-nous.html">Qui sommes-nous</a>
-          <a href="../">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">Prendre RDV</a>
-      </div>
-    </div>
-  </header>
 
-  <!-- Hero section -->
-  <section class="section" style="background:var(--noir);padding:120px 0 80px;">
-    <div class="container" style="text-align:center;">
-      <span class="badge"><span class="badge-dot"></span> Guide quartiers · Courbevoie 92</span>
-      <div class="divider divider-center"></div>
-      <h1 style="color:var(--blanc);margin-bottom:16px;font-size:clamp(1.8rem,4vw,2.6rem);">Meilleurs quartiers pour un Airbnb à Courbevoie : guide complet par secteur 2026</h1>
-      <p style="color:rgba(255,255,255,.65);font-size:18px;max-width:65ch;margin:0 auto;line-height:1.7;">Où investir en Airbnb à Courbevoie ? Analyse détaillée quartier par quartier : prix au m², rendement, profil voyageur, transport, équipements. De Bécon-les-Bruyères au Faubourg de l'Arche.</p>
+<header class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../../"><img src="../../assets/logo-blanc.png" alt="Hostopia" class="nav-logo"></a>
+      <nav class="nav-links">
+        <a href="../../">Accueil</a>
+        <a href="../../qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="../">Blog</a>
+      </nav>
+      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre RDV</a>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- Article content -->
-  <section class="section" style="padding-top:48px;">
-    <div class="container" style="max-width:780px;">
+<main>
+
+<section class="hero-article">
+  <div class="container">
+    <div class="hero-badge"><span class="badge-dot"></span> Guide quartiers · Courbevoie 92</div>
+    <h1>Meilleurs quartiers pour un Airbnb à Courbevoie : guide complet par secteur 2026</h1>
+    <div class="hero-meta"><span>Juin 2026</span><span>⏱ 10 min de lecture</span></div>
+    <p class="hero-sub">Où investir en Airbnb à Courbevoie ? Analyse détaillée quartier par quartier : prix au m², rendement, profil voyageur, transport. De Bécon-les-Bruyères au Faubourg de l'Arche.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="article-wrap">
       <div class="article-content">
 
         <p><strong>Courbevoie</strong> n'est pas une ville monolithique. Avec ses 55 000 habitants, ses 4 quartiers bien distincts et sa position stratégique aux portes de <strong>La Défense</strong>, chaque secteur offre un <strong>potentiel Airbnb différent</strong>. Un studio de 28 m² au Faubourg de l'Arche n'attire pas le même voyageur qu'un T3 à Bécon-les-Bruyères. Pour connaître <a href="../revenu-airbnb-courbevoie/">les estimations de revenus par type de bien et quartier</a>, consultez notre analyse détaillée.</p>
@@ -262,13 +302,13 @@
         <h3>Recommandation Airbnb</h3>
         <p>Pour un <strong>investisseur avec un budget conséquent</strong> visant le haut de gamme, le Faubourg de l'Arche est le <strong>meilleur choix pour Airbnb à Courbevoie</strong>. Un studio ou T1 de 30-40 m² avenue de l'Arche ou rue Jean Jaurès générera les <strong>plus hauts revenus absolus</strong>. Privilégiez un bien avec parking (très demandé).</p>
 
-        <!-- CTA Milieu d'article -->
-        <div style="background:var(--noir);border-radius:var(--radius-lg);padding:40px 32px;margin:48px 0;text-align:center;border:1px solid rgba(255,255,255,.06);">
-          <h3 style="color:var(--blanc);margin-bottom:12px;">Vous ne savez pas quel quartier choisir à Courbevoie ?</h3>
-          <p style="color:rgba(255,255,255,.7);margin-bottom:24px;max-width:55ch;margin-left:auto;margin-right:auto;">Nos experts analysent votre bien et vous conseillent le meilleur positionnement Airbnb selon votre budget et vos objectifs.</p>
-          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-primary" target="_blank" rel="noopener">Estimer mes revenus</a>
-            <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-outline" style="border-color:var(--teal);color:var(--teal);" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <!-- CTA Milieu -->
+        <div class="cta-block">
+          <h3>Vous ne savez pas quel quartier choisir à Courbevoie ?</h3>
+          <p>Nos experts analysent votre bien et vous conseillent le meilleur positionnement Airbnb selon votre budget et vos objectifs.</p>
+          <div class="cta-btns">
+            <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-yellow" target="_blank" rel="noopener">Estimer mes revenus</a>
+            <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-ghost" target="_blank" rel="noopener">Prendre rendez-vous</a>
           </div>
         </div>
 
@@ -358,13 +398,13 @@
 
         <p><strong>Bon à savoir</strong> : certains quartiers résidentiels de Courbevoie (en particulier à Bécon) ont des <strong>règlements de copropriété</strong> qui interdisent ou limitent les locations de courte durée. Vérifiez toujours le règlement avant d'acheter.</p>
 
-        <!-- CTA Fin d'article -->
-        <div style="background:linear-gradient(135deg,var(--teal),var(--orange));border-radius:var(--radius-lg);padding:48px 32px;text-align:center;margin-top:48px;">
-          <h3 style="color:var(--blanc);margin-bottom:12px;">Prêt à lancer votre Airbnb à Courbevoie ?</h3>
-          <p style="color:rgba(255,255,255,.85);margin-bottom:24px;max-width:50ch;margin-left:auto;margin-right:auto;">Confiez-nous la gestion de votre bien et maximisez vos revenus locatifs, quel que soit le quartier.</p>
-          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-dark" target="_blank" rel="noopener">Estimer mes revenus</a>
-            <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-outline" style="border-color:var(--blanc);color:var(--blanc);" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <!-- CTA Fin -->
+        <div class="cta-block" style="background:linear-gradient(135deg,var(--yellow) 0%,#FFE44D 100%);">
+          <h3 style="color:var(--text);">Prêt à lancer votre Airbnb à Courbevoie ?</h3>
+          <p style="color:rgba(0,0,0,.6);">Confiez-nous la gestion de votre bien et maximisez vos revenus locatifs, quel que soit le quartier.</p>
+          <div class="cta-btns">
+            <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-yellow" style="background:var(--text);color:var(--white);" target="_blank" rel="noopener">Estimer mes revenus</a>
+            <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-ghost" style="border-color:rgba(0,0,0,.25);color:var(--text);" target="_blank" rel="noopener">Prendre rendez-vous</a>
           </div>
         </div>
 
@@ -373,10 +413,12 @@
   </section>
 
   <!-- FAQ section -->
-  <section class="section" style="background:var(--noir-soft);">
-    <div class="container" style="max-width:780px;">
-      <h2 style="text-align:center;margin-bottom:48px;color:var(--blanc);">Questions fréquentes sur les quartiers Airbnb à Courbevoie</h2>
-      <div class="faq-list">
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="article-wrap">
+        <div class="faq-section">
+          <h2>❓ Questions fréquentes sur les quartiers Airbnb à Courbevoie</h2>
+          <div class="faq-list">
         <div class="faq-item">
           <div class="faq-question">Quel est le meilleur quartier de Courbevoie pour faire du Airbnb ?</div>
           <div class="faq-answer">Le <strong>Faubourg de l'Arche</strong> est le meilleur quartier pour le Airbnb à Courbevoie grâce à sa proximité immédiate de La Défense et sa clientèle d'affaires premium. <strong>Bécon-les-Bruyères</strong> offre le meilleur rapport qualité-prix.</div>
@@ -419,20 +461,26 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0;">
-        <p>&copy; 2026 Hostopia. Tous droits réservés.</p>
-        <p>Courbevoie · Hauts-de-Seine · Île-de-France</p>
-      </div>
-    </div>
-  </footer>
+</main>
 
-  <a href="https://api.whatsapp.com/send/?phone=33767209266" class="whatsapp-float" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span>Discutons sur WhatsApp</span>
-  </a>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Hostopia · Conciergerie Courbevoie · <a href="../../">Accueil</a> · <a href="../">Blog</a></p>
+  </div>
+</footer>
+
+<div class="wa" onclick="window.open('https://wa.me/33767209266?text=Bonjour','_blank')">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-lbl">Discutons sur WhatsApp</span>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){this.parentElement.classList.toggle('open');});
+  });
+</script>
 </body>
 </html>
