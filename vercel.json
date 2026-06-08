@@ -3,7 +3,9 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/quartiers-airbnb-courbevoie", "destination": "/blog/quartiers-airbnb-courbevoie", "permanent": true },
-    { "source": "/revenu-airbnb-courbevoie", "destination": "/blog/revenu-airbnb-courbevoie", "permanent": true }
+    { "source": "/revenu-airbnb-courbevoie", "destination": "/blog/revenu-airbnb-courbevoie", "permanent": true },
+    { "source": "/reglementation-airbnb-courbevoie", "destination": "/blog/reglementation-airbnb-courbevoie", "permanent": true },
+    { "source": "/calendrier-saisonnier-airbnb-courbevoie", "destination": "/blog/calendrier-saisonnier-airbnb-courbevoie", "permanent": true }
   ],
   "headers": [
     {
