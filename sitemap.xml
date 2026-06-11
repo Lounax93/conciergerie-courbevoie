@@ -66,4 +66,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://conciergeriecourbevoie.fr/blog/evenements-paris-la-defense-arena-airbnb-courbevoie</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriecourbevoie.fr/blog/fiscalite-airbnb-courbevoie-2026</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
