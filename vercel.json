@@ -11,7 +11,9 @@
     { "source": "/preparer-airbnb-ete-courbevoie", "destination": "/blog/preparer-airbnb-ete-courbevoie", "permanent": true },
     { "source": "/acheter-investir-airbnb-courbevoie", "destination": "/blog/acheter-investir-airbnb-courbevoie", "permanent": true },
     { "source": "/evenements-paris-la-defense-arena-airbnb-courbevoie", "destination": "/blog/evenements-paris-la-defense-arena-airbnb-courbevoie", "permanent": true },
-    { "source": "/fiscalite-airbnb-courbevoie-2026", "destination": "/blog/fiscalite-airbnb-courbevoie-2026", "permanent": true }
+    { "source": "/fiscalite-airbnb-courbevoie-2026", "destination": "/blog/fiscalite-airbnb-courbevoie-2026", "permanent": true },
+    { "source": "/checkin-autonome-airbnb-courbevoie", "destination": "/blog/checkin-autonome-airbnb-courbevoie", "permanent": true },
+    { "source": "/travaux-renovation-airbnb-courbevoie", "destination": "/blog/travaux-renovation-airbnb-courbevoie", "permanent": true }
   ],
   "headers": [
     {
