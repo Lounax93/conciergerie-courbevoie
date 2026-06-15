@@ -17,7 +17,9 @@
     { "source": "/photographie-airbnb-courbevoie", "destination": "/blog/photographie-airbnb-courbevoie", "permanent": true },
     { "source": "/superhost-airbnb-courbevoie", "destination": "/blog/superhost-airbnb-courbevoie", "permanent": true },
     { "source": "/taxe-sejour-airbnb-courbevoie", "destination": "/blog/taxe-sejour-airbnb-courbevoie", "permanent": true },
-    { "source": "/strategies-prix-tarification-airbnb-courbevoie", "destination": "/blog/strategies-prix-tarification-airbnb-courbevoie", "permanent": true }
+    { "source": "/strategies-prix-tarification-airbnb-courbevoie", "destination": "/blog/strategies-prix-tarification-airbnb-courbevoie", "permanent": true },
+    { "source": "/nettoyage-entretien-airbnb-courbevoie", "destination": "/blog/nettoyage-entretien-airbnb-courbevoie", "permanent": true },
+    { "source": "/accueil-voyageurs-airbnb-courbevoie", "destination": "/blog/accueil-voyageurs-airbnb-courbevoie", "permanent": true }
   ],
   "headers": [
     {
