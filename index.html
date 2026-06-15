@@ -186,7 +186,20 @@
       .t-grid{grid-template-columns:1fr 1fr;}
       .zone-grid{grid-template-columns:1fr;gap:48px;}
     }
+    /* ── Hamburger ── */
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;z-index:110;}
+    .hamburger span{display:block;width:26px;height:2.5px;background:var(--white);border-radius:2px;transition:var(--ease);}
+    .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+    .hamburger.active span:nth-child(2){opacity:0;}
+    .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+    .mobile-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,18,41,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:105;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .35s ease;}
+    .mobile-overlay.open{opacity:1;pointer-events:all;}
+    .mobile-overlay a{color:rgba(255,255,255,.8);font-size:22px;font-weight:600;letter-spacing:.03em;transition:color .2s;}
+    .mobile-overlay a:hover{color:var(--yellow);}
+    .mobile-overlay .nav-cta-mobile{padding:16px 40px;background:var(--yellow);color:var(--text);font-weight:800;font-size:18px;border-radius:10px;display:inline-block;margin-top:12px;letter-spacing:.02em;}
+    .mobile-overlay .nav-cta-mobile:hover{background:var(--yellow-hover);transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,212,0,.5);}
     @media(max-width:768px){
+      .hamburger{display:flex;}
       .stats-grid{grid-template-columns:repeat(2,1fr);}
       .stat-item:nth-child(2){border-right:none;}
       .benefits-grid{grid-template-columns:1fr;}
@@ -211,6 +224,9 @@
   <div class="container">
     <div class="nav-inner">
       <a href="/"><img src="assets/logo-blanc.png" alt="Hostopia" class="nav-logo"></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
         <a href="/">Accueil</a>
         <a href="qui-sommes-nous.html">Qui sommes-nous</a>
@@ -218,6 +234,12 @@
       </nav>
       <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre RDV</a>
     </div>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="/" onclick="closeMenu()">Accueil</a>
+    <a href="qui-sommes-nous.html" onclick="closeMenu()">Qui sommes-nous</a>
+    <a href="/blog" onclick="closeMenu()">Blog</a>
+    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta-mobile" target="_blank" rel="noopener" onclick="closeMenu()">Prendre RDV</a>
   </div>
 </header>
 
@@ -643,6 +665,20 @@
     {threshold:.1, rootMargin:'0px 0px -40px 0px'}
   );
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const overlay = document.getElementById('mobileOverlay');
+  function closeMenu(){ hamburger.classList.remove('active'); overlay.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  if(hamburger && overlay){
+    hamburger.addEventListener('click',()=>{
+      const open = overlay.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded',open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    overlay.addEventListener('click',(e)=>{ if(e.target===overlay) closeMenu(); });
+  }
 </script>
 </body>
 </html>
