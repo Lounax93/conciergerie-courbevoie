@@ -19,7 +19,9 @@
     { "source": "/taxe-sejour-airbnb-courbevoie", "destination": "/blog/taxe-sejour-airbnb-courbevoie", "permanent": true },
     { "source": "/strategies-prix-tarification-airbnb-courbevoie", "destination": "/blog/strategies-prix-tarification-airbnb-courbevoie", "permanent": true },
     { "source": "/nettoyage-entretien-airbnb-courbevoie", "destination": "/blog/nettoyage-entretien-airbnb-courbevoie", "permanent": true },
-    { "source": "/accueil-voyageurs-airbnb-courbevoie", "destination": "/blog/accueil-voyageurs-airbnb-courbevoie", "permanent": true }
+    { "source": "/accueil-voyageurs-airbnb-courbevoie", "destination": "/blog/accueil-voyageurs-airbnb-courbevoie", "permanent": true },
+    { "source": "/gestion-avis-reputation-airbnb-courbevoie", "destination": "/blog/gestion-avis-reputation-airbnb-courbevoie", "permanent": true },
+    { "source": "/assurance-protection-airbnb-courbevoie", "destination": "/blog/assurance-protection-airbnb-courbevoie", "permanent": true }
   ],
   "headers": [
     {
