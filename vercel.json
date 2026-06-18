@@ -24,7 +24,8 @@
     { "source": "/gestion-avis-reputation-airbnb-courbevoie", "destination": "/blog/gestion-avis-reputation-airbnb-courbevoie", "permanent": true },
     { "source": "/assurance-protection-airbnb-courbevoie", "destination": "/blog/assurance-protection-airbnb-courbevoie", "permanent": true },
     { "source": "/amenagement-exterieur-terrasse-balcon-airbnb-courbevoie", "destination": "/blog/amenagement-exterieur-terrasse-balcon-airbnb-courbevoie", "permanent": true },
-    { "source": "/home-staging-airbnb-courbevoie", "destination": "/blog/home-staging-airbnb-courbevoie", "permanent": true }
+    { "source": "/home-staging-airbnb-courbevoie", "destination": "/blog/home-staging-airbnb-courbevoie", "permanent": true },
+    { "source": "/animaux-acceptes-airbnb-courbevoie", "destination": "/blog/animaux-acceptes-airbnb-courbevoie", "permanent": true }
   ],
   "headers": [
     {
