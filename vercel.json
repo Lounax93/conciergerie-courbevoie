@@ -30,7 +30,8 @@
     { "source": "/colocation-airbnb-courbevoie", "destination": "/blog/colocation-airbnb-courbevoie", "permanent": true },
     { "source": "/demarrer-airbnb-courbevoie", "destination": "/blog/demarrer-airbnb-courbevoie", "permanent": true },
     { "source": "/marketing-airbnb-courbevoie", "destination": "/blog/marketing-airbnb-courbevoie", "permanent": true },
-    { "source": "/copropriete-airbnb-courbevoie", "destination": "/blog/copropriete-airbnb-courbevoie", "permanent": true }
+    { "source": "/copropriete-airbnb-courbevoie", "destination": "/blog/copropriete-airbnb-courbevoie", "permanent": true },
+    { "source": "/guide-fiscalite-lmnp-airbnb-courbevoie-2026", "destination": "/blog/guide-fiscalite-lmnp-airbnb-courbevoie-2026", "permanent": true }
   ],
   "headers": [
     {
