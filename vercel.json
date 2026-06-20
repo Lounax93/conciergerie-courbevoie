@@ -5,6 +5,7 @@
     { "source": "/quartiers-airbnb-courbevoie", "destination": "/blog/quartiers-airbnb-courbevoie", "permanent": true },
     { "source": "/revenu-airbnb-courbevoie", "destination": "/blog/revenu-airbnb-courbevoie", "permanent": true },
     { "source": "/reglementation-airbnb-courbevoie", "destination": "/blog/reglementation-airbnb-courbevoie", "permanent": true },
+    { "source": "/sejours-longue-duree-corporate-airbnb-courbevoie", "destination": "/blog/sejours-longue-duree-corporate-airbnb-courbevoie", "permanent": true },
     { "source": "/calendrier-saisonnier-airbnb-courbevoie", "destination": "/blog/calendrier-saisonnier-airbnb-courbevoie", "permanent": true },
     { "source": "/equipement-decoration-airbnb-courbevoie", "destination": "/blog/equipement-decoration-airbnb-courbevoie", "permanent": true },
     { "source": "/conciergerie-airbnb-courbevoie-prix", "destination": "/blog/conciergerie-airbnb-courbevoie-prix", "permanent": true },
