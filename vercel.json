@@ -28,6 +28,7 @@
     { "source": "/home-staging-airbnb-courbevoie", "destination": "/blog/home-staging-airbnb-courbevoie", "permanent": true },
     { "source": "/animaux-acceptes-airbnb-courbevoie", "destination": "/blog/animaux-acceptes-airbnb-courbevoie", "permanent": true },
     { "source": "/colocation-airbnb-courbevoie", "destination": "/blog/colocation-airbnb-courbevoie", "permanent": true },
+    { "source": "/delegation-gestion-airbnb-courbevoie", "destination": "/blog/delegation-gestion-airbnb-courbevoie", "permanent": true },
     { "source": "/demarrer-airbnb-courbevoie", "destination": "/blog/demarrer-airbnb-courbevoie", "permanent": true },
     { "source": "/marketing-airbnb-courbevoie", "destination": "/blog/marketing-airbnb-courbevoie", "permanent": true },
     { "source": "/copropriete-airbnb-courbevoie", "destination": "/blog/copropriete-airbnb-courbevoie", "permanent": true },
