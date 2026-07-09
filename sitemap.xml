@@ -61,7 +61,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    P26-07-06</lastmod>
+    <loc>https://conciergeriecourbevoie.fr/blog/proprietaire-expatrie-airbnb-courbevoie</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -314,6 +315,12 @@
   <url>
     <loc>https://conciergeriecourbevoie.fr/blog/litiges-conflits-voyageurs-airbnb-courbevoie</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriecourbevoie.fr/blog/linge-literie-serviettes-airbnb-courbevoie</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
