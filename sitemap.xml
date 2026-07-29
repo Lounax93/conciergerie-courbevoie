@@ -16,7 +16,13 @@
         <loc>https://conciergeriecourbevoie.fr/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <lastmod>2026-07-27</lastmod>
+        <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+        <loc>https://conciergeriecourbevoie.fr/blog/erreurs-a-eviter-airbnb-courbevoie</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2026-07-29</lastmod>
     </url>
     <url>
         <loc>https://conciergeriecourbevoie.fr/blog/accessibilite-pmr-handicap-airbnb-courbevoie</loc>
